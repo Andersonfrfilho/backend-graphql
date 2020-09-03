@@ -1,7 +1,7 @@
 endpoint: http://localhost:4466
 datamodel: datamodel.graphql
-secret: thisismysupersecrettext
+secret: thisisasecret
 hooks:
   post-deploy:
     - graphql codegen --project database # instead of graphql get-schema
-    - prisma generate
+    # - prisma generate
